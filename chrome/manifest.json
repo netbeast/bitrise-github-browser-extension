@@ -1,0 +1,17 @@
+ {
+    "name": "Bitrise",
+    "version": "1.0",
+    "description": "BitriseAPI + github",
+	"permissions": ["storage"],
+    "background": {
+      "scripts": ["jquery-3.3.js","borderify.js"],
+      "persistent": false
+    },
+	  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/jsdario/yeti/pull/*"],
+      "js": ["jquery-3.3.js", "borderify.js"]
+    }
+  ],
+    "manifest_version": 2
+  }
